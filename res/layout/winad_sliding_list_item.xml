@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center" android:id="@+id/exchange_banner"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	style="@style/exchange_listItem_but">
+	<RelativeLayout android:gravity="left|center"
+		android:layout_width="fill_parent" android:layout_height="50.0dip">
+		<ImageView android:id="@+id/exchange_appIcon0"
+			android:layout_width="35.0dip" android:layout_height="35.0dip"
+			android:layout_marginLeft="6.0dip" android:layout_centerVertical="true" />
+		<ImageView android:id="@+id/exchange_appIcon1"
+			android:scaleType="fitXY" android:layout_width="fill_parent"
+			android:layout_height="50dip" android:layout_centerVertical="true"
+			android:layout_marginLeft="2dip" android:layout_marginRight="2dip" />
+		<TextView android:id="@+id/exchange_name0" android:textSize="14.0dip"
+			android:textColor="#262626" android:layout_width="wrap_content"
+			android:singleLine="true" android:layout_height="wrap_content"
+			android:layout_marginLeft="5.0dip" android:layout_marginTop="4.0dip"
+			android:layout_toRightOf="@+id/exchange_appIcon0" />
+		<TextView android:id="@+id/exchange_content0"
+			android:textSize="12.0dip" android:textColor="#737373"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="5.0dip" android:layout_marginBottom="4.0dip"
+			android:singleLine="true" android:ellipsize="marquee"
+			android:layout_toRightOf="@+id/exchange_appIcon0"
+			android:layout_alignParentBottom="true" />
+
+	</RelativeLayout>
+</RelativeLayout>
+
+

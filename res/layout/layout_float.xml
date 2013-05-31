@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:background="@color/white" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:stretchColumns="0,1" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:text="@string/text_set_please"
+                android:textColor="@color/orange"
+                android:textSize="18dip" />
+
+            <TableRow android:layout_marginTop="30dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/text_setsv_sensibility"
+                    android:textColor="@color/white"
+                    android:textSize="15dip" />
+
+                <SeekBar
+                    android:id="@+id/seek_sensibility"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="20dip" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/white" />
+
+            <TableRow android:layout_marginTop="10dip" >
+
+                <CheckBox
+                    android:id="@+id/check_sound_on"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="@string/check_sound_on" />
+
+                <CheckBox
+                    android:id="@+id/check_vibrate_on"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="@string/check_vibrate" />
+            </TableRow>
+<!-- 
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/white" />
+
+            <TableRow android:layout_marginTop="30dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/text_title_ic"
+                    android:textColor="@color/white"
+                    android:textSize="15dip" />
+
+                <ToggleButton
+                    android:id="@+id/check_title_ic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_horizontal|center_vertical" />
+            </TableRow>
+ -->
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/white" />
+
+            <ImageView
+                android:id="@+id/img_setsvok"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:src="@anim/imgok_bg" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dip"
+                android:background="@color/white" />
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

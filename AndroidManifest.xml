@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.craining.blog.touchcalm"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:name=".floatview.FloatApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".TouchCalmActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GetProtityActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".TouchCalmHelperActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <service
+            android:name=".service.TouchCalmService"
+            android:label="@string/app_name" >
+        </service>
+
+        <activity
+            android:name=".widget.TouchWidgetConfig"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".widget.TouchWidgetProvider"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/touchwidgetcon" />
+        </receiver>
+
+        <service
+            android:name=".service.TouchCalmService"
+            android:label="@string/app_name" >
+        </service>
+        <service
+            android:name=".service.TouchWidgetService"
+            android:label="@string/app_name" >
+        </service>
+        <service
+            android:name=".floatview.FloatService"
+            android:label="@string/app_name" >
+        </service>
+
+        <receiver
+            android:name=".TouchCalmReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".LockScreenAdmin"
+            android:description="@string/app_name"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/lock_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.winad.android.wall.MoreAdActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.winad.android.adwall.util.VideoPlayerActivity"
+            android:screenOrientation="landscape" />
+
+        <meta-data
+            android:name="PUBLISHER_ID_ADWALL"
+            android:value="FDB1F9B8BD2F023FE6923D8785DCABA6" />
+        <meta-data
+            android:name="TESTMODE_ADWALL"
+            android:value="false" />
+
+        <activity android:name="com.winad.android.adwall.push.PushContentActivity" />
+
+        <receiver android:name="com.winad.android.adwall.push.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.winad.android.adwall.push.MyService" />
+    </application>
+
+</manifest>

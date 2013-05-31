@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World!</string>
+    <string name="app_name">TouchCalm</string>
+    <string name="widget_text_open">已開啓</string>
+    <string name="widget_text_opening">正在開啓....</string>
+    <string name="widget_text_open_fail">開啓失敗！</string>
+    <string name="widget_text_close">未開啓</string>
+    <string name="widget_text_closing">正在關閉....</string>
+    <string name="widget_text_close_fail">關閉失敗！</string>
+    <string name="error_nullsensor">對不起！您的手機不存在感應器，本程序與您無緣。</string>
+    
+    <string name="main_text_tip">請設置自動進行的操作：</string>
+    
+    <string name="main_btn_set">設置生效</string>
+    <string name="main_btn_reset">恢複默認</string>
+    <string name="main_btn_help">軟件說明</string>
+    <string name="main_btn_exit">關閉程序</string>
+    
+    <string name="text_set_please">自動控制狀態下的設置：</string>
+    <string name="text_setsv_sensibility">手機翻轉靈敏度：</string>
+    <string name="check_sound_on">翻轉提示音</string>
+    <string name="check_vibrate">翻轉振動</string>
+    <string name="text_title_ic">標題欄圖標顯示：</string>
+    <string name="btn_sound_vibtare_set">設置</string>
+    <string name="text_sound_on_v_on">██ ♬ ▒ ██</string>
+    <string name="text_sound_off_v_on">████ ▒ ██</string>
+    <string name="text_sound_on_v_off">██ ♬ ████</string>
+    <string name="text_sound_off_v_off">████████</string>
+    
+    <string name="toast_sound_on">翻轉提示音開啓！</string>
+    <string name="toast_sound_off">翻轉提示音關閉！</string>
+    
+    <string name="text_ring">鈴聲音量</string>
+    <string name="text_media">媒體音量</string>
+    <string name="text_clock">鬧鈴音量</string>
+    <string name="text_notice">通知音量</string>
+    <string name="text_system">系統音量</string>
+    <string name="text_dtmf">撥號音量</string>
+    <string name="text_voice">聽筒音量</string>
+    <string name="text_vibrate_ring">來電振動</string>
+    <string name="text_vibrate_notice">通知振動</string>
+    
+    <string name="text_downlie">手機趴著</string>
+    <string name="text_uplie">手機躺著</string>
+    <string name="text_effective">是否控制</string>
+    
+    <string name="warn_media_auto">不建議開啓，自動控制狀態下翻轉手機會對影音的播放産生影響。</string>
+    <string name="warn_voice_auto">不建議開啓，自動控制狀態下翻轉手機會對通話産生影響。</string>
+    
+    <string name="toast_str_setsuccess">設置成功！點擊桌面小部件開啓自動控制！</string>
+    <string name="toast_str_setsuccessok">設置成功！</string>
+    <string name="toast_str_defaultsuccess">成功恢複默認設置！</string>
+    <string name="toast_str_setfail">設置失敗！請嘗試重新安裝本程序吧！</string>
+    <string name="toast_str_setuneffective">按鍵無效，請點擊  關閉  按鈕退出程序！</string>
+    
+    <string name="str_chose_email_app">請選擇郵件客戶端軟件：</string>
+    
+    <string name="text_help">\n\t\t此款應用可以爲您自動控制各種音量。
+        \n\n\t\t爲了開啓自動控制，您需要手動添加桌面小部件來進行控制，點擊小部件上的圖標可方便的在開啓與關閉之間切換。
+        \n\n\t\t點擊界面中的藍色長條位置可以進行自動控制狀態下的其它設置。
+        \n\n\t\t注意：開啓自動控制前請不要將鈴聲、媒體、通知調爲靜音，否則本程序將不能再對它們進行設置；對音量更改後記得點擊設置生效按鈕。</string>
+
+</resources>
